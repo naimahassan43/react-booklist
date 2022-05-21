@@ -10,7 +10,7 @@ const Book = () => {
         alt="All-the-Missing-Girls"
       />
       <h1>All The Missing Girls</h1>
-      <p>Megan Miranda</p>
+      <h4 style={{color: "#617d98", fontSize:'0.75rem', marginTop:'0.25rem'}}>Megan Miranda</h4>
     </article>
   );
 }
