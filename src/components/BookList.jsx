@@ -17,7 +17,9 @@ const sBook = {
 function BookList() {
   return (
     <section className="booklist">
-      <Book img={fBook.img} title={fBook.title} author={fBook.author} />
+      <Book img={fBook.img} title={fBook.title} author={fBook.author} >
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi molestias minus aperiam ab tempore odit accusantium sed, eaque quos dolor.</p>
+      </Book>
       <Book img={sBook.img} title={sBook.title} author={sBook.author} />
     </section>
   );
