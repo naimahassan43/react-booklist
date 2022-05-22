@@ -1,8 +1,8 @@
 import React from "react";
 import "./book.css";
 
-const Book = (props) => {
-  const { title, author, img, children } = props.book;
+const Book = ({ title, author, img, children }) => {
+  // const { title, author, img, children } = props;
   return (
     <article className="book">
       <img src={img} alt={title} style={{ height: "400px", width: "250px" }} />
