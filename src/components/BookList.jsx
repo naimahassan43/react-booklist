@@ -2,25 +2,36 @@ import React from "react";
 import Book from "./Book";
 import "./book.css";
 
-const fBook = {
-  img: "https://offtheshelf.com/app/uploads/2019/12/Goergeous-Lies.jpg",
-  title: "Gorgeous Lies",
-  author: "Martha McPhee",
-};
-const sBook = {
-  img: "https://offtheshelf.com/app/uploads/2017/03/All-the-Missing-Girls.jpg",
-  title: "All The Missing Girls",
-  author: "Megan Miranda",
-};
-
+const books = [
+  {
+    img: "https://offtheshelf.com/app/uploads/2019/12/Goergeous-Lies.jpg",
+    title: "Gorgeous Lies",
+    author: "Martha McPhee",
+  },
+  {
+    img: "https://offtheshelf.com/app/uploads/2017/03/All-the-Missing-Girls.jpg",
+    title: "All The Missing Girls",
+    author: "Megan Miranda",
+  },
+  {
+    img: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982112301/the-winemakers-wife-9781982112301_xlg.jpg",
+    title: "The Winemaker's Wife",
+    author: "Kristin Harmel",
+  },
+  {
+    img: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501187933/the-daughters-tale-9781501187933_xlg.jpg",
+    title: "The Daughter's Tale",
+    author: "Armando Lucas Correa",
+  },
+];
 
 function BookList() {
   return (
     <section className="booklist">
-      <Book img={fBook.img} title={fBook.title} author={fBook.author} >
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi molestias minus aperiam ab tempore odit accusantium sed, eaque quos dolor.</p>
-      </Book>
-      <Book img={sBook.img} title={sBook.title} author={sBook.author} />
+      {books.map((book) => {
+      
+        return <Book book={book}></Book>;
+      })}
     </section>
   );
 }

@@ -1,12 +1,11 @@
-import React from 'react'
-import './book.css'
-
+import React from "react";
+import "./book.css";
 
 const Book = (props) => {
-  const { title, author, img, children } = props;
+  const { title, author, img, children } = props.book;
   return (
     <article className="book">
-      <img src={img} alt={title} />
+      <img src={img} alt={title} style={{ height: "400px", width: "250px" }} />
       <h1>{title}</h1>
       <h4
         style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}
@@ -16,6 +15,6 @@ const Book = (props) => {
       {children}
     </article>
   );
-}
+};
 
-export default Book
+export default Book;
